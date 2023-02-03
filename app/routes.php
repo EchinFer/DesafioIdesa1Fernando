@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\Book;
+use App\Controllers\Lote;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
 
@@ -23,4 +24,14 @@ return function (App $app) {
         $group->delete('/delete/{id}', [Book::class, 'delete']); //
 
     });
+
+    $app->group('/lote', function (group $group) {
+
+        //Get lotes
+        $group->get('/', [Lote::class, 'getAll']); //
+        $group->get('/all', [Lote::class, 'getAll']); //
+        $group->get('/{id}', [Lote::class, 'getById']); //
+
+    });
+
 };
