@@ -467,6 +467,175 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Desafio 2",
+			"item": [
+				{
+					"name": "Obtener un lote por su identificador",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/lote/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lote",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener un lote por su identificador",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/lote/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lote",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Feb 2023 07:27:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"lote\": \"00145\",\n            \"precio\": 150000,\n            \"clientID\": 123456,\n            \"vencimiento\": \"2022-09-01\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Obtener todos los lotes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/lote/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lote",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener todos los lotes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/lote/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lote",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Feb 2023 07:30:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"lote\": \"00145\",\n            \"precio\": 150000,\n            \"clientID\": 123456,\n            \"vencimiento\": \"2022-09-01\"\n        },\n        {\n            \"id\": 2,\n            \"lote\": \"00146\",\n            \"precio\": 110000,\n            \"clientID\": 135486,\n            \"vencimiento\": null\n        },\n        {\n            \"id\": 3,\n            \"lote\": \"00147\",\n            \"precio\": 160000,\n            \"clientID\": 135486,\n            \"vencimiento\": null\n        },\n        {\n            \"id\": 4,\n            \"lote\": \"00148\",\n            \"precio\": 130000,\n            \"clientID\": 123456,\n            \"vencimiento\": \"2022-10-01\"\n        },\n        {\n            \"id\": 5,\n            \"lote\": \"00148\",\n            \"precio\": 145000,\n            \"clientID\": 123456,\n            \"vencimiento\": null\n        },\n        {\n            \"id\": 6,\n            \"lote\": \"00148\",\n            \"precio\": 190000,\n            \"clientID\": 123456,\n            \"vencimiento\": \"2022-12-01\"\n        },\n        {\n            \"id\": 7,\n            \"lote\": \"00148\",\n            \"precio\": 190000,\n            \"clientID\": 123456,\n            \"vencimiento\": \"2023-01-01\"\n        },\n        {\n            \"id\": 8,\n            \"lote\": \"00148\",\n            \"precio\": 190000,\n            \"clientID\": 123456,\n            \"vencimiento\": \"2023-02-01\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVjaGluZmVyQGdtYWlsLmNvbSJ9.lFf9txssYEvA3KqfdpNsbdBCh0F6VN6C7p18G9luzDs",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
 	],
 	"event": [
