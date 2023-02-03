@@ -21,7 +21,13 @@ Clone el repositorio o descargue el zip
  git clone https://github.com/EchinFer/DesafioIdesa1Fernando.git
 ```
 
-Luego de clonar o descomprimir el proyecto, ejecutar comando de composer para iniciar servidor
+Luego de clonar o descomprimir el proyecto, ejecutar comando de composer install
+
+```
+composer install
+```
+
+Casi casi, solo falta iniciar el servidor con el siguiente comando
 
 ```
 composer start
