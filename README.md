@@ -27,7 +27,7 @@ Luego de clonar o descomprimir el proyecto, ejecutar comando de composer para in
 composer start
 ```
 
-Importar desde postman la colleción **IDESA.postman_collection** para comenzar con las pruebas!
+Importar desde postman la colleción **IDESA.postman_collection** para comenzar con las pruebas! El token para pruebas está en la sección de autenticación de la carpeta Desafio 1 en la colección.
 
 
 ## Built With
